@@ -6,55 +6,58 @@
   set guioptions-=m
 
 " fullscreen maximizes vertically AND horizontally
-  set fuoptions=maxvert,maxhorz
+" NOTE: This doesn't work in Ubuntu
+"  set fuoptions=maxvert,maxhorz
   
 " TABS: safari style tab navigation
-  nmap <D-[> :tabprevious<CR>
-  nmap <D-]> :tabnext<CR>
-  map <D-[> :tabprevious<CR>
-  map <D-]> :tabnext<CR>
-  imap <D-[> <C-O>:tabprevious<CR>
-  imap <D-]> <C-O>:tabnext<CR>
+  nmap <A-[> :tabprevious<CR>
+  nmap <A-]> :tabnext<CR>
+  map <A-[> :tabprevious<CR>
+  map <A-]> :tabnext<CR>
+  imap <A-[> <C-O>:tabprevious<CR>
+  imap <A-]> <C-O>:tabnext<CR>
 
 " TABS: Firefox style, open tabs with command-<tab number>
-  map <silent> <D-1> :tabn 1<CR>
-  map <silent> <D-2> :tabn 2<CR>
-  map <silent> <D-3> :tabn 3<CR>
-  map <silent> <D-4> :tabn 4<CR>
-  map <silent> <D-5> :tabn 5<CR>
-  map <silent> <D-6> :tabn 6<CR>
-  map <silent> <D-7> :tabn 7<CR>
-  map <silent> <D-8> :tabn 8<CR>
-  map <silent> <D-9> :tabn 9<CR>
+  map <silent> <A-1> :tabn 1<CR>
+  map <silent> <A-2> :tabn 2<CR>
+  map <silent> <A-3> :tabn 3<CR>
+  map <silent> <A-4> :tabn 4<CR>
+  map <silent> <A-5> :tabn 5<CR>
+  map <silent> <A-6> :tabn 6<CR>
+  map <silent> <A-7> :tabn 7<CR>
+  map <silent> <A-8> :tabn 8<CR>
+  map <silent> <A-9> :tabn 9<CR>
 
 " bind command-] to shift right
-  nmap <D-]> >>
-  vmap <D-]> >>
-  imap <D-]> <C-O>>>
+  nmap <A-]> >>
+  vmap <A-]> >>
+  imap <A-]> <C-O>>>
  
 " bind command-[ to shift left
-  nmap <D-[> <<
-  vmap <D-[> <<
-  imap <D-[> <C-O><<
+  nmap <A-[> <<
+  vmap <A-[> <<
+  imap <A-[> <C-O><<
 
   set lines=40
   set columns=136
   
 
-" bind command-option-l to toggle line numbers
-  nmap <silent> <D-M-l> :set invnumber<CR>
+"bind command-option-l to toggle line numbers
+  nmap <silent> <A-M-l> :set invnumber<CR>
  
 " Unmap Apple+T so we can...
-  macmenu &File.New\ Tab key=<nop>
+" NOTE: This doesn't work in Ubuntu
+" macmenu &File.New\ Tab key=<nop>
 
 " Change Apple+T to TextMate Like Fuzzy Finder
-  nnoremap <D-t> :FuzzyFinderTextMate<CR> 
+  nnoremap <A-t> :FuzzyFinderTextMate<CR> 
 
 " Unmap Apple+Shift+T so we can...
-  macmenu &File.Open\ Tab\.\.\. key=<nop>
+" NOTE: This doesn't work in Ubuntu
+" macmenu &File.Open\ Tab\.\.\. key=<nop>
 
 " Change Apple+Shift+T to TextMate Like Fuzzy Finder
-  nnoremap <D-T> :FuzzyFinderTag!<CR> 
+  nnoremap <A-T> :FuzzyFinderTag!<CR> 
 
 " Run file in shell mode with ruby
-  nnoremap <D-r> :Shell ruby %<cr>
+  nnoremap <A-r> :Shell ruby %<cr>
