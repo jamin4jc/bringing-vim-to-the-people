@@ -1,9 +1,9 @@
 " GVIM: Color options and general settings
-  colorscheme github256
-  set guioptions=e
-  set guioptions=c
-  set guioptions-=T
-  set guioptions-=m
+  colorscheme spicycodegui
+"  set guioptions=e
+"  set guioptions=c
+"  set guioptions-=T
+"  set guioptions-=m
 
 " fullscreen maximizes vertically AND horizontally
 " NOTE: This doesn't work in Ubuntu
